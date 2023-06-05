@@ -58,9 +58,10 @@ for(let i=0; i<team.length; i++) {
 const infos = document.getElementById('infos')
 
 for(let i=0; i<team.length; i++){
+    infos.innerHTML += `<img src="./img/${team[i].image}"><br>`;
     infos.innerHTML += team[i].name +'<br>' ;
     infos.innerHTML += team[i].role +'<br>';
-    infos.innerHTML += team[i].image +'<br><br>';
+    
 
     
 }
